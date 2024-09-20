@@ -19,6 +19,10 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -57,15 +61,15 @@
                 <a href="#home" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
                 <a href="#skill" class="nav-item nav-link">Skills</a>
-                <a href="#service" class="nav-item nav-link">Services</a>
             </div>
-            <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
+            <a id="top" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block" style="cursor: pointer;">
                 <h1 class="text-primary fw-bold m-0">CrazyCoder</h1>
             </a>
             <div class="navbar-nav me-auto py-0">
                 <a href="#project" class="nav-item nav-link">Projects</a>
-                <a href="#team" class="nav-item nav-link">Team</a>
-                <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
+                <a href="#service" class="nav-item nav-link">Services</a>
+                <!-- <a href="#team" class="nav-item nav-link">Team</a> -->
+                <!-- <a href="#testimonial" class="nav-item nav-link">Testimonial</a> -->
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
         </div>
@@ -303,7 +307,7 @@
                         </div>
                         <div class="ms-sm-4">
                             <h4 class="mb-3">Front-end Application</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$49.00</span></h6>
+                            <h6 class="mb-3">Start from <span class="text-primary">$59.00</span></h6>
                             <span>I create responsive, fast, and visually appealing front-end solutions using React, Next.js, or Html & css, ensuring seamless user experiences across devices.</span>
                         </div>
                     </div>
@@ -311,7 +315,7 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
                         <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa-solid fa-globe fa-2x text-dark"></i>
+                            <i class="ri-global-line text-dark" style="font-size: 34px;"></i>
                         </div>
                         <div class="ms-sm-4">
                             <h4 class="mb-3">Back-end Api</h4>
@@ -335,12 +339,12 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
                         <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-laptop-code fa-2x text-dark"></i>
+                            <i class="ri-brush-fill text-dark" style="font-size: 35px;"></i>
                         </div>
                         <div class="ms-sm-4">
                             <h4 class="mb-3">UI/UX Design</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
-                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo clita sit sed sit dolor eos.</span>
+                            <h6 class="mb-3">Start from <span class="text-primary">$49.99</span></h6>
+                            <span>I design intuitive, user-friendly interfaces with a focus on great user experiences, using tools like Figma and Adobe XD.</span>
                         </div>
                     </div>
                 </div>
@@ -360,13 +364,13 @@
                 <div class="col-lg-6 text-lg-end">
                     <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
                         <li class="mx-3 active" data-filter="*">All Projects</li>
-                        <li class="mx-3" data-filter=".first">UI/UX Design</li>
-                        <li class="mx-3" data-filter=".second">Graphic Design</li>
+                        <li class="mx-3" data-filter=".first">Frontend</li>
+                        <li class="mx-3" data-filter=".second">FullStack</li>
                     </ul>
                 </div>
             </div>
             <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="col-lg-4 col-md-6 portfolio-item second">
                     <div class="portfolio-img rounded overflow-hidden" style="height: 25rem !important;background-color: red;">
                         <img class="w-100 h-100" src="img/exclusive.png" alt="">
                         <div class="portfolio-btn">
@@ -384,7 +388,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="col-lg-4 col-md-6 portfolio-item second">
                     <div class="portfolio-img rounded overflow-hidden" style="height: 25rem !important;background-color: red;">
                         <img class="w-100 h-100" src="img/spotify.jpg" alt="">
                         <div class="portfolio-btn">
@@ -402,7 +406,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="col-lg-4 col-md-6 portfolio-item second">
                     <div class="portfolio-img rounded overflow-hidden" style="height: 25rem !important;background-color: red;">
                         <img class="w-100 h-100" src="img/p4.jpg" alt="">
                         <div class="portfolio-btn">
@@ -411,7 +415,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
+                <div class="col-lg-4 col-md-6 portfolio-item first">
                     <div class="portfolio-img rounded overflow-hidden" style="height: 25rem !important;background-color: red;">
                         <img class="w-100 h-100" src="img/sherry.png" alt="">
                         <div class="portfolio-btn">
@@ -481,7 +485,7 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid bg-light py-5 my-5" id="testimonial">
+    <!-- <div class="container-fluid bg-light py-5 my-5" id="testimonial">
         <div class="container-fluid py-5">
             <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Testimonial</h1>
             <div class="row justify-content-center">
@@ -541,7 +545,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Testimonial End -->
 
 
@@ -559,7 +563,7 @@
             <div class="row g-5">
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="mb-2">My office:</p>
-                    <h3 class="fw-bold">123 Street, New York, USA</h3>
+                    <h3 class="fw-bold">Ward No: 21, Moro, Sindh, PK</h3>
                     <hr class="w-100">
                     <p class="mb-2">Call me:</p>
                     <h3 class="fw-bold">+92 3236195337</h3>
@@ -571,12 +575,12 @@
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-primary me-2" href="https://x.com/MajidA56934" target="_blank"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-primary me-2" href="https://www.facebook.com/profile.php?id=61553057004402" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href="" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://www.youtube.com/@crazy-coder-t9y" target="_blank"><i class="fab fa-youtube"></i></a>
                         <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/majid-ali-0331302b2/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="w-100 h-100 bg-danger">
+                    <div class="w-100 h-100">
                      <iframe class="w-100 h-100" src="https://contact-form-olive-sigma.vercel.app/"></iframe>
                     </div>
                 </div>
